@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 60%;
+    width: 100%;
+}
+#nav{
+    /* background-color: red; */
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    gap: 40px;
+    padding-right: 10px;
+
+}
+#nav h5{
+    font-weight: 500;
+}
+#nav h6{
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 15px 20px;
+    border-radius: 50%;
+}
+#nav #menu{
+    display: none;
+}
+#black{
+    background-color: rgb(14, 13, 13);
+    padding: 11px 15px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+#center h1{
+    font-size: 4vw;
+    padding: 5px 50px;
+    line-height: 5vw;
+}
+#down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 50px;
+}
+#down #left{
+    font-size: 1vw;
+    line-height: 1.5vw;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+#down #right .elem{
+    /* background-color: yellow; */
+    margin:5px 20px;
+}
+#down #right .elem{
+    width: 15vw;
+    padding: 0.5vw;
+    border-top: 2px solid black;
+    position: relative;
+    /* border-radius: 5px; */
+}
+.elem p{
+
+    text-align: left;
+}
+.elem i{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    font-size: 20px;
+    opacity: 0;
+}
+.elem:hover{
+    background-color: rgb(232, 232, 233);
+}
+.elem:hover i{
+    opacity: 1;
+}
+#page2{
+    height: 40%;
+    width: 100%;
+    background: url(https://images.unsplash.com/photo-1617551307578-7f5160d6615e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position:0 20%;
+    background-size: cover;
+}
+@media (max-width:600px) {
+    #nav{
+        height: 40px;
+        font-size: 20px;
+        gap: 40px;
+        padding-right: 10px;
+    
+    }
+    #nav h5,h6{
+        display: none;
+    }
+    #nav #menu{
+        display: initial;
+        font-size: 10px;
+        scale: 1.5;
+        background-color: white;
+        color: black;
+    }
+    #center h1{
+        font-size: 9vw;
+        padding: 5px 20px;
+        line-height: 10vw;
+    }
+    #down{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+    #down #left{
+        /* text-align: left; */
+        font-size: 3.8vw;
+        line-height: 5vw;
+        padding: 10px;
+    }
+    #down #left p{
+        text-align: left;
+    }
+    #down #right{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    #down #right .elem{
+        width: 100vw;
+    }
+    #down #right .elem{
+        padding: 0.8vw;
+        border-top: 2px solid black;
+        position: relative;
+        /* border-radius: 5px; */
+    }
+    .elem p{
+        text-align: left;
+    }
+    .elem i{
+        position: absolute;
+        right: 0;
+        top: 25%;
+        font-size: 20px;
+        opacity: 1;
+    }
+    .elem:hover{
+        background-color: rgb(232, 232, 233);
+    }
+}
